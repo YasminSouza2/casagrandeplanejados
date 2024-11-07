@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaGrande Móveis Planejados</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+    <header> 
+        <div class="logo"> 
+            <img src="logo.png" alt="Logotipo da CasaGrande Móveis Planejados" id="imglogo">
+            <ul class="lista">
+                <li><a href="#sobre">Sobre Casagrande</a></li>
+                <li><a href="#ambientes">Ambientes</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="ambientes" id="ambientes">
+            <h3><strong>Conheça nossos ambientes e inspire-se.</strong></h3>
+            <img src="ambiente1.png" alt="ambiente1" id="ambiente1">
+            <img src="ambiente2.png" alt="ambiente2" id="ambiente2">
+            <img src="ambiente3.png" alt="ambiente3" id="ambiente3">
+        </div>
+
+        <div class="sobre" id="sobre">
+            <h3><strong>Nossa História</strong> </h3>
+            <p>CasaGrande Móveis nasceu do sonho de transformar ambientes com móveis feitos sob medida, que trazem conforto, beleza e funcionalidade para cada espaço. Desde o primeiro móvel esculpido com cuidado em nossa oficina, colocamos nosso coração e dedicação em cada detalhe, porque acreditamos que um lar deve refletir a personalidade e os sonhos de quem vive nele. Nossa trajetória é marcada pelo capricho e pela busca incessante pela perfeição. Aprendemos, evoluímos e crescemos lado a lado com nossos clientes, que nos confiaram a missão de transformar suas casas e ambientes corporativos. Cada projeto é único, e nos dedicamos a entender cada história, cada necessidade e cada detalhe que faz a diferença. Com anos de experiência e uma equipe apaixonada pelo que faz, seguimos inovando e criando móveis planejados que vão além do que se vê. Nosso compromisso com a qualidade e a satisfação dos nossos clientes nos impulsiona a sermos cada vez melhores, mantendo o carinho e a atenção que temos desde o primeiro dia.</p> 
+        </div>  
+
+        <div class="comentarios-container">
+            <div class="comentario">
+                <p>"Excelente serviço e qualidade nos móveis! Muito satisfeito com o resultado."</p>
+                <img src="estrelas.png" alt="Foto do cliente 1">
+                <p><strong>Diego Prado</strong></p>
+            </div>
+            <div class="comentario">
+                <p>"Equipe profissional e atenciosa, os móveis ficaram exatamente como eu queria."</p>
+                <img src="estrelas.png" alt="Foto do cliente 2">
+                <p><strong>Vinicius Nóbrega</strong></p>
+            </div>
+            <div class="comentario">
+                <p>"Recomendo a Casagrande para quem busca qualidade e bom atendimento."</p>
+                <img src="estrelas.png" alt="Foto do cliente 3">
+                <p><strong>Buke</strong></p>
+            </div>
+        </div>
+
+        <div class="whatsapp-icon">
+            <a href="https://wa.me/41995964359" target="_blank">
+                <img src="wpp3.png" alt="WhatsApp" />
+            </a>
+        </div>
+
+        <section id="contato" class="container-contato-orcamento">
+            <div class="contato">
+                <h3>Entre em contato</h3>
+                <ul>
+                    <li>
+                        <h4>Telefone:</h4> (41) 99999-9999
+                    </li>
+                    <li>
+                        <h4>E-mail:</h4> casagrande@casagrande.com.br
+                    </li>
+                    <li>
+                        <h4>Redes Sociais:</h4> 
+                        <a href="https://www.instagram.com/casagrande.planejados/" target="_blank">
+                            <img src="instagram.jpg" alt="Instagram">
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+
+            <div class="orcamento"> 
+                <fieldset>
+                    <legend><h3>Faça seu Orçamento</h3></legend>
+
+                    <form id="formulario" onsubmit="sendToWhatsApp(event)">
+                        <label><input type="text" name="name" placeholder="Nome*" required /></label><br>
+                        <label><input type="email" name="email" placeholder="E-mail*" required /></label><br>
+                        <label><input type="text" name="subject" placeholder="Assunto*" required /></label><br>
+                        <textarea name="message" placeholder=" Mensagem*" required></textarea><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright"> © 2024 CasaGrande Móveis. Desenvolvido por Yasmin Souza</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body> 
+</html>
